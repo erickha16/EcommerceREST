@@ -18,10 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Uploads\" />
-    <Folder Include="Settings\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

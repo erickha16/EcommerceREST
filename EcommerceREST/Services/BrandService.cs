@@ -6,9 +6,8 @@ using EcommerceREST.Constants;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Http.Logging;
 using Microsoft.Extensions.Options;
-using EcommerceREST.Services;
 
-namespace EcommerceMVC.Services
+namespace EcommerceREST.Services
 {
     public class BrandService : IBrandService //Implementa la interfaz IBrandService para definir los servicios de marcas
     {

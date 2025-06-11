@@ -67,6 +67,8 @@ namespace EcommerceMVC.Services
 
             await _context.Categories.AddAsync(category); //Agrega la nueva categoría al contexto de la base de datos (Se prepara)
             await _context.SaveChangesAsync(); //Guarda los cambios en la base de datos (Se ejecuta la inserción)
+
+            categoryDTO.Id = category.Id; //Asigna el ID generado por la base de datos al DTO para que se pueda devolver
         }
 
         //-----------------------------------------------------------------------------------------------\\
