@@ -1,4 +1,17 @@
+using EcommerceREST.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//Agregar DbContext para la aplicaicón principal
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("sql_connection")));
+
+
+
+
+
+
 
 // Add services to the container.
 
