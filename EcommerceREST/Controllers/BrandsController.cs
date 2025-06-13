@@ -26,7 +26,7 @@ namespace EcommerceREST.Controllers
         }
 
         // GET api/<BrandController>/5
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var brand = await _brandService.GetByIdAsync(id);

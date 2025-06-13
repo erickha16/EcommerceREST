@@ -27,7 +27,7 @@ namespace EcommerceREST.Controllers
         }
 
         //obtener una categoría por ID
-        [HttpGet("{ids}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var category = await _categoryService.GetByIdAsync(id);
